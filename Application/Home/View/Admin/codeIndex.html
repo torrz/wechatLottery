@@ -1,0 +1,35 @@
+<div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 main">
+    <h3 class="sub-header">{$eventtitle1} {$eventtitle2}</h3>
+    <div class="table-responsive col-md-12">
+        <table class="table table-hover table-condensed table-bordered">
+            <thead>
+            <tr>
+                <th>抽奖码</th>
+                <th>报名时间</th>
+                <th >邀请人微信</th>
+                <th>邀请人手机号</th>
+                <th>邀请人IP</th>
+                <th>被邀请人微信</th>
+                <th>被邀请人手机号</th>
+                <th>被邀请人IP</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="codes" id="vo">
+                <tr>
+                    <td>{$vo.lotterycode}</td>
+                    <td>{$vo.regtime}</td>
+                    <td>{$vo.referee1}</td>
+                    <td>{$vo.refereephone1}</td>
+                    <th>255.255.255.255</th>
+                    <td >{$vo.referee2}</td>
+                    <td>{$vo.refereephone2}</td>
+                    <th>255.255.255.255</th>
+                    <td><a href="./eventDetail?id={$vo.eventid}">详细</a></td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+</div>

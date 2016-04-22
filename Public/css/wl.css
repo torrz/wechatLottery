@@ -1,0 +1,18 @@
+.avatar{border-radius: 50%}
+img.smallerImg{width: 40px;height: 40px;}
+/*字体颜色*/
+.textRedColor{color: #E71B64;}
+.textBlueColor{color:#56abe4;}
+.textGreyColor{color:#8b8b8b;}
+.textWhiteColor{color: #FFF;}
+.textLightGreyColor{color: #b8b8b8;}
+/*背景颜色*/
+.bgcBlack{background-color: #000;}
+.getLotteryDivStyle{margin-bottom: 20px;margin-top:10px;border-bottom: solid 1px #e3e3e3;}
+
+/*位置*/
+.paddingLR{padding-left: 10px;padding-right: 10px;}
+.fixedBottom{position: fixed;z-index: 10;top: 0;right: 10px;height: auto;font-weight: 800;}
+.textCenter{text-align: center;}
+.textLeft{text-align: left;}
+.textRight{text-align: right;}

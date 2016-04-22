@@ -1,0 +1,189 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="/wechatLottery/Public/lib/weui.css">
+    <link rel="stylesheet" href="/wechatLottery/Public/css/wl.css">
+    <link rel="stylesheet" href="/wechatLottery/Public/css/jquery-weui.css">
+    <title>和盟精选</title>
+</head>
+<body>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd textCenter"><h2>和盟精选</h2></div>
+    <div class="weui_panel_bd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb avatar" src="/wechatLottery/Public/images/testImg.png" alt="头像">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title textBlueColor">Tor</h4>
+                <p class="weui_media_desc">15999953640</p>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd textCenter">
+        <h2><?php echo ($event["0"]["eventtitle1"]); ?>+<?php echo ($event["0"]["eventtitle2"]); ?></h2>
+        <a href="javascript:void(0);">
+        <h3><a href="javascript:;" class="open-popup textRedColor" data-target="#djgl">查看兑奖攻略?</a></h3>
+        </a>
+    </div>
+    <div class="weui_panel_bd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg weui_panel_ft open-popup" data-target="#yqpy">
+            <div class="weui_media_hd">
+                <img class=" smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-yaoqinghaoyou.png" alt="头像">
+            </div>
+            <div class="weui_media_bd ">
+                <h4 class="weui_media_title textBlueColor">邀请朋友参加</h4>
+                <p class="weui_media_desc">邀请朋友配对成功后，您和您的好友将<span class="textRedColor">额外获得</span>一个共同的兑奖码。</p>
+            </div>
+
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg weui_panel_ft">
+            <div class="weui_media_hd">
+                <img class=" smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-tuanduicheng.png" alt="头像">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title textBlueColor">组件团队参加</h4>
+                <p class="weui_media_desc">组建团队成功后，团队的成员将<span class="textRedColor">共享所有</span>额外的兑奖码。</p>
+            </div>
+        </a>
+    </div>
+</div>
+    <div class="weui_panel">
+        <div class="weui_panel_hd textCenter">恭喜您已报名成功！</div>
+        <div class="weui_panel_bd">
+            <div class="weui_media_box weui_media_text">
+                <div class="weui-row">
+                    <div class="weui-col-25 textRight"></div>
+                    <h5 class="textCenter weui-col-40">获取兑奖码<span class="textRedColor"> 2 </span>个</h5>
+                    <div class="weui-col-25 textLeft"></div>
+                </div>
+
+                <div class="weui-row weui-no-gutter getLotteryDivStyle">
+                    <div class="weui-col-25 textCenter">
+                        <img class="smallerImg avatar" src="/wechatLottery/Public/images/testImg.png" alt="头像">
+                        <h6 class="textBlueColor">Tor</h6>
+                    </div>
+                    <div class="weui-col-40 textCenter textGreyColor">
+                        <p>105255</p>
+                        <div style="width: 80%;height: 1px;background-color:#e3e3e3;margin: 5px auto;"></div>
+                        <p class="textLightGreyColor">2016-04-01</p>
+                        <p class="textLightGreyColor" style="margin-bottom: 10px;">11:35:22</p>
+                    </div>
+                    <div class="weui-col-25 textCenter">
+                        <img class="smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-fenxiangdaopengyouquan.png" alt="头像">
+                        <h6 class="textBlueColor">分享到朋友圈</h6>
+                    </div>
+                </div>
+
+                <div class="weui-row weui-no-gutter getLotteryDivStyle" >
+                    <div class="weui-col-25 textCenter">
+                        <img class="smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-tuandui.png" alt="头像">
+                        <h6 class="textBlueColor">Tor发起的团队</h6>
+                    </div>
+                    <div class="weui-col-40 textCenter textGreyColor">
+                        <p>105255</p>
+                        <div style="width: 80%;height: 1px;background-color:#e3e3e3;margin: 5px auto;"></div>
+                        <p class="textLightGreyColor">2016-04-01</p>
+                        <p class="textLightGreyColor" style="margin-bottom: 10px;">11:35:22</p>
+                    </div>
+                    <div class="weui-col-25 textCenter">
+                        <img class="smallerImg avatar" src="/wechatLottery/Public/images/testImg.png" alt="头像">
+                        <h6 class="textBlueColor">Tor</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui_panel weui_panel_access textCenter">
+        <div class="weui_panel_hd">中奖号码</div>
+        <div class="weui_panel_bd">
+            <div class="weui_media_box weui_media_text">
+                <h4 class="weui_media_title">100084</h4>
+            </div>
+    </div>
+</div>
+
+<!--查看兑奖攻略开始-->
+<div id="djgl" class="weui-popup-container">
+    <div class="weui-popup-modal paddingLR">
+        <h2 class="textCenter">-0元体验抽奖攻略-</h2>
+        <h4>方式一 分享</h4>
+        <br>
+        <p>正确输入您的手机号并提交，根据提示成功并分享到您的朋友圈，即可立即获得一个兑奖码！
+            <br>
+            （注意：不是“发送给朋友”）
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h4>方式二 配对</h4>
+        <br>
+        <p>活动分享到您的朋友圈或者发送给朋友后，您的朋友点击该文章链接成功报名后，您和您的朋友将共同获得一个额外的兑奖码！</p>
+        <br>
+        <hr>
+        <br>
+        <h4>方式三 组建团队</h4>
+        <br>
+        <p>为什么我要加入团队？</p>
+        <br>
+        <p>您成功加入团队后，便可分享团队中产生的任一兑换码，和朋友一起中奖的概率就越大。</p>
+        <br>
+        <p>为什么我要让我的朋友加入我所在的团队？</p>
+        <br>
+        <p>邀请您的朋友加入您所在的团队后，团队中所产生的任一兑换码将由每一团员共享。邀请的朋友越多，获取的兑奖码就越多！</p>
+        <br>
+        <hr>
+        <br>
+        <p class="textCenter">如何组建团队？</p>
+        <p>报名成功后，您可以看到以下的图示：</p>
+        <div class="weui_panel_bd" style="border: solid #f1bfc0 1px;border-radius: 10px;width: 90%">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg weui_panel_ft">
+                <div class="weui_media_hd">
+                    <img class=" smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-tuanduicheng.png" alt="头像">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title textBlueColor">组建团队参加</h4>
+                    <p class="weui_media_desc">组建团队成功后，团队的成员将<span class="textRedColor">共享所有</span>额外的兑奖码。</p>
+                </div>
+            </a>
+        </div>
+        <p>点击组建团队，可以看到以下弹层</p>
+        <p>邀请您身边的朋友用手机扫二维码，扫码报名分享后即可加入你的团队。</p>
+        <div class="weui_panel_bd" style="border: solid #f1bfc0 1px;border-radius: 10px;width: 90%">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg weui_panel_ft">
+                <div class="weui_media_hd">
+                    <img class=" smallerImg avatar" src="/wechatLottery/Public/iconfont/iconfont-tuanduicheng.png" alt="头像">
+                </div>
+                <div class="weui_media_bd">
+                    <h2 class="weui_media_title textBlueColor">团队成员</h2>
+                    <p class="weui_media_desc">组建团队成功后，团队的成员将<span class="textRedColor">共享所有</span>额外的兑奖码。</p>
+                </div>
+            </a>
+        </div>
+        <a href="javascript:;" class='close-popup textBlueColor fixedBottom'>关闭</a>
+    </div>
+</div>
+<!--查看兑奖攻略结束-->
+
+<!--邀请朋友参加开始-->
+<div id="yqpy" class="weui-popup-container">
+    <div class="weui-popup-modal paddingLR">
+       <p>点击右上角，<span class="textRedColor">将活动文章分享给好友</span>，让好友报名和盟的免费入住活动，您和您的好友将获得一个共同的兑奖码！
+           <br>
+           如果您中奖，将获得[<?php echo ($event["0"]["eventtitle1"]); ?>]+[<?php echo ($event["0"]["eventtitle2"]); ?>]的权利（除节假日外，平日周末通用）
+       </p>
+        <a href="javascript:;" class='close-popup textBlueColor fixedBottom'>关闭</a>
+    </div>
+</div>
+<!--邀请朋友参加结束-->
+<div class="textCenter">和盟 精选</div>
+<script src="/wechatLottery/Public/lib/jquery-2.1.4.js"></script>
+<script src="/wechatLottery/Public/js/jquery-weui.js"></script>
+<script src="/wechatLottery/Public/js/wljs/indexjs.js"></script>
+</body>
+</html>
