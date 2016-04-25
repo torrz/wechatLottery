@@ -16,7 +16,7 @@ use Think\Controller;
                 $user=$admin->where('adminName="'.$userName.'"')->find();
                 if($user){
                     if($user['adminpassword']==$password){
-                        session('user','admin');
+                        session('user',$userName);
                         $this->success('登陆成功','../Admin/overview');
                     }else{
                         $this->error("密码错误！");

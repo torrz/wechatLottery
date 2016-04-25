@@ -5,6 +5,7 @@
  * Date: 2016/4/22
  * Time: 16:48
  */
+namespace Wechat;
 class tools {
     //控制超长文本中的输出
     function txt_substr($str,$start,$len){

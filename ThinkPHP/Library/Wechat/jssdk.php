@@ -1,4 +1,5 @@
 <?php
+namespace Wechat;
 class JSSDK {
   private $appId;
   private $appSecret;
