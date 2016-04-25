@@ -75,12 +75,18 @@ class IndexController extends Controller {
                 $user2 = $users->where('openid="' . $code['referee1'] . '" AND appid= "' . $appid . '"')->find();
                 if (isset($user2) && $user2 != '') {
                     $code['referee1'] = $user2;
-                    $code['referee1']['team'] = 0;
+                    $code['team'] = 0;
                 } else {
-                    $code['referee1']['team'] = 1;
+                    $code['team'] = 1;
+                    //如果存在团队 找出团队成员
+                    $members=$codeModel->where('referee1="'.$code['referee1'].'"')->field('referee2')->select();
+                    foreach ($members as &$member){
+                        $member=$users->where('openid="'.$member['referee2'].'"')->find();
+                    }
                 }
             }
         }
+        $this->assign('members',$members);
         $this->assign('codes',$codes);
         $this->assign('user',$user1);
         $this->display('lotteryPage');
